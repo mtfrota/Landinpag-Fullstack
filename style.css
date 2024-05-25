@@ -1,0 +1,565 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #ffffff00, #ffffff00);
+    padding: 0 !important;
+}
+
+.navbar-nav li a {
+    color: #ffffff !important;
+    font-weight: 800;
+    padding: 0 10px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+/* BANNER SEÇÃO */
+
+#banner {
+    background-image: linear-gradient(to right, #ffffff00, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh; /* Ajuste a altura conforme necessário */
+    color: #000000;
+    margin-top: 100px;
+    padding: 50px 100px; /* Ajusta o padding superior e inferior */
+    box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.promo-title {
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0; /* Corrige centralização vertical */
+}
+
+.sub {
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 20px; /* Ajusta o espaçamento */
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px; /* Ajusta o espaçamento */
+}
+
+.container-btn .btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px; /* Ajusta o padding */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container-btn .btn:hover {
+    background-color: white;
+    color: #000000;
+}
+
+/* Estilo geral para a seção do carrossel */
+#carrossel {
+    margin: 20px 0;
+}
+
+/* Estilo para a imagem do carrossel */
+.carousel-item img {
+    height: 500px; /* Definindo altura fixa para as imagens */
+    object-fit: cover; /* Ajustando a imagem para cobrir o espaço do carrossel */
+}
+
+/* Estilo para o texto das legendas do carrossel */
+.carousel-caption {
+    .carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; /* Centralizando o texto */
+    left: 50%; /* Posicionando no centro horizontal */
+    transform: translateX(-50%); /* Ajuste para centralizar horizontalmente */
+}
+}
+
+.carousel-caption h5 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff; /* Cor do texto */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    color: #ffffff; /* Cor do texto */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    max-width: 1000px;
+}
+
+/* Estilo dos botões de navegação */
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Estilo dos indicadores */
+.carousel-indicators button {
+    background-color: #ffffff;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
+
+/* Estilização dos Cards */
+/* Estilização dos Cards */
+.box-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: calc(100% / 3 - 20px); /* Calcula a largura de cada card para 33.33% com um espaçamento de 20px */
+    background-color: #000000;
+    color: #000000;
+    border-radius: 6px;
+    padding: 1em;
+    text-align: center;
+    transition: all 0.6s ease;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0); /* Sombra para os cards */
+}
+
+.card:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.card h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+
+
+.card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+/* Responsividade cards */
+@media (min-width: 768px) {
+    .carousel-caption {
+        left: 5%;
+        text-align: center;
+    }
+
+    .carousel-caption h5 {
+        font-size: 28px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .container-btn {
+        gap: 10px;
+    }
+
+    .box-cards {
+        padding: 20px 40px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    .card:nth-child(odd) {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 960px) {
+    .card {
+        width: calc(25% - 20px);
+    }
+
+    .card:nth-child(4n+1) {
+        margin-right: 20px;
+    }
+}
+
+/* Saiba mais */
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff5d;
+    border-radius: 8px;
+    text-align: center; /* Centraliza todo o conteúdo */
+    padding-block-start: 200px;
+}
+
+.fl-heading-text {
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fl-rich-text {
+    line-height: 1.6;
+    color: #000000;
+    font-size: 16px;
+    text-align: left; /* Ajusta o texto para o alinhamento desejado */
+    margin: 0 auto; /* Centraliza o texto dentro do container */
+    max-width: 600px; /* Define uma largura máxima para o texto */
+}
+
+.fl-rich-text p {
+    margin-bottom: 15px;
+    text-align: left; /* Ajusta o alinhamento do parágrafo */
+}
+
+/* Beneficios */
+
+.fl-icon {
+    font-size: px;
+    margin-bottom: 10px;
+}
+.fl-icon-text h5 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.fl-icon-text p {
+    font-size: 20px;
+}
+
+
+/* quanto ganha? */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+.qto-ganha {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.salary-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.salary-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.salary-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.salary-role {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.separator {
+    background-color: #28a745;
+    height: 2px;
+    border: none;
+    margin: 20px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* modulos */
+/* Estilos para o layout geral */
+
+.fl-heading {
+    text-align: center; /* Centraliza o texto */
+    font-size: 32px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço inferior */
+}
+
+.fl-heading-text {
+    display: block; /* Garante que o span se comporte corretamente */
+}
+
+.fl-row-content-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff65;
+    box-shadow: rgb(0, 0, 0) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/* Estilos para as seções */
+.fl-col-group, .fl-col {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os títulos */
+.fl-module-heading .fl-heading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+/* Estilos para os textos ricos */
+.fl-rich-text {
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para as listas */
+.fl-rich-text ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: rgb(135, 3, 196);
+}
+
+/* depoimentos */
+.testimonial-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+.testimonial-card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+.testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.testimonial-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.testimonial-card .author {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Depoimentos */
+
+.testimonial-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+.testimonial-card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+.testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.testimonial-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.testimonial-card .author {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* inscreva-se */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .signup-section {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+
+  /* rodape */´
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center; /* Centraliza todo o conteúdo do footer */
+  }
+  
+  .site-footer .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+    text-align: center; /* Centraliza o texto dentro das colunas */
+  }
+  
+  .footer-col h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    white-space: nowrap; /* Evita que o texto quebre */
+  }
+  
+  .footer-col ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  
+  

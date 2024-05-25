@@ -1,0 +1,17 @@
+GIT HUB:
+
+git config --global user.name (nome git)
+git config --global user.email (email git)
+
+add URL repositório
+git add .
+git commit -m "comentário"
+git push oring main
+
+oque eu instalei no VS nesse projeto?*************************
+
+Importei o bootstrap
+npm add styled-components (trabalhar com componentes estilizados)
+npm add @types/styled-components (melhor integração do typescript com vscode)
+
+
